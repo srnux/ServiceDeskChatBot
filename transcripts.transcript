@@ -1,0 +1,875 @@
+[
+  {
+    "type": "conversationUpdate",
+    "membersAdded": [
+      {
+        "id": "15da2740-872c-11e9-b564-037877b365dd",
+        "name": "Bot"
+      }
+    ],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "c9459af1-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:14+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "timestamp": "2019-08-24T05:41:14.399Z",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User"
+    },
+    "locale": "",
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "conversationUpdate",
+    "membersAdded": [
+      {
+        "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+        "name": "User"
+      }
+    ],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "c948f651-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:14+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "timestamp": "2019-08-24T05:41:14.421Z",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User"
+    },
+    "locale": "",
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "text": "hi",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625277616xw18m2s4gcq"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:41:17.619Z",
+    "entities": [
+      {
+        "requiresBotState": true,
+        "supportsListening": true,
+        "supportsTts": true,
+        "type": "ClientCapabilities"
+      }
+    ],
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "cb30f030-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:17+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "trace",
+    "timestamp": "2019-08-24T05:41:17.839Z",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "replyToId": "cb30f030-c631-11e9-9a1b-3bce9db4ad0a",
+    "label": "Luis Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "hi",
+        "alteredText": null,
+        "intents": {
+          "GreetingIntent": {
+            "score": 0.95458585
+          },
+          "SubmitBugIntent": {
+            "score": 0.04331563
+          },
+          "None": {
+            "score": 0.0110397777
+          },
+          "QueryBugTypeIntent": {
+            "score": 0.0005836512
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "hi",
+          "alteredQuery": null,
+          "topScoringIntent": {
+            "intent": "GreetingIntent",
+            "score": 0.95458585
+          },
+          "intents": [
+            {
+              "intent": "GreetingIntent",
+              "score": 0.95458585
+            },
+            {
+              "intent": "SubmitBugIntent",
+              "score": 0.04331563
+            },
+            {
+              "intent": "None",
+              "score": 0.0110397777
+            },
+            {
+              "intent": "QueryBugTypeIntent",
+              "score": 0.0005836512
+            }
+          ],
+          "entities": [],
+          "compositeEntities": null,
+          "sentimentAnalysis": null,
+          "connectedServiceResult": null
+        }
+      },
+      "luisModel": {
+        "ModelID": "9f808e6b-bc78-4e12-90fe-893b602511db"
+      },
+      "luisOptions": {
+        "BingSpellCheckSubscriptionKey": null,
+        "IncludeAllIntents": true,
+        "IncludeInstanceData": true,
+        "Log": null,
+        "SpellCheck": null,
+        "Staging": null,
+        "Timeout": 100000,
+        "TimezoneOffset": null,
+        "LogPersonalInformation": false
+      },
+      "luisResult": {
+        "query": "hi",
+        "alteredQuery": null,
+        "topScoringIntent": {
+          "intent": "GreetingIntent",
+          "score": 0.95458585
+        },
+        "intents": [
+          {
+            "intent": "GreetingIntent",
+            "score": 0.95458585
+          },
+          {
+            "intent": "SubmitBugIntent",
+            "score": 0.04331563
+          },
+          {
+            "intent": "None",
+            "score": 0.0110397777
+          },
+          {
+            "intent": "QueryBugTypeIntent",
+            "score": 0.0005836512
+          }
+        ],
+        "entities": [],
+        "compositeEntities": null,
+        "sentimentAnalysis": null,
+        "connectedServiceResult": null
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "cb5281f0-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:17+02:00",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "What is your name?",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "cb30f030-c631-11e9-9a1b-3bce9db4ad0a",
+    "id": "cb531e30-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:17+02:00",
+    "timestamp": "2019-08-24T05:41:17.843Z",
+    "locale": ""
+  },
+  {
+    "text": "fff",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625281083znpsftqtwv"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:41:21.086Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "cd41f5e0-c631-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:41:21+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Hi fff. How can I help you today?",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "cd41f5e0-c631-11e9-9a1b-3bce9db4ad0a",
+    "id": "193244a0-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:43:28+02:00",
+    "timestamp": "2019-08-24T05:43:28.490Z",
+    "locale": ""
+  },
+  {
+    "text": "I want to create a bug issue",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "15666257148690cbf9g2uawqm"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:48:34.872Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "cfd07380-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:48:34+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "trace",
+    "timestamp": "2019-08-24T05:48:35.552Z",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "replyToId": "cfd07380-c632-11e9-9a1b-3bce9db4ad0a",
+    "label": "Luis Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "I want to create a bug issue",
+        "alteredText": null,
+        "intents": {
+          "SubmitBugIntent": {
+            "score": 0.731015265
+          },
+          "QueryBugTypeIntent": {
+            "score": 0.3263957
+          },
+          "None": {
+            "score": 0.006238295
+          },
+          "GreetingIntent": {
+            "score": 0.00312022027
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "I want to create a bug issue",
+          "alteredQuery": null,
+          "topScoringIntent": {
+            "intent": "SubmitBugIntent",
+            "score": 0.731015265
+          },
+          "intents": [
+            {
+              "intent": "SubmitBugIntent",
+              "score": 0.731015265
+            },
+            {
+              "intent": "QueryBugTypeIntent",
+              "score": 0.3263957
+            },
+            {
+              "intent": "None",
+              "score": 0.006238295
+            },
+            {
+              "intent": "GreetingIntent",
+              "score": 0.00312022027
+            }
+          ],
+          "entities": [],
+          "compositeEntities": null,
+          "sentimentAnalysis": null,
+          "connectedServiceResult": null
+        }
+      },
+      "luisModel": {
+        "ModelID": "9f808e6b-bc78-4e12-90fe-893b602511db"
+      },
+      "luisOptions": {
+        "BingSpellCheckSubscriptionKey": null,
+        "IncludeAllIntents": true,
+        "IncludeInstanceData": true,
+        "Log": null,
+        "SpellCheck": null,
+        "Staging": null,
+        "Timeout": 100000,
+        "TimezoneOffset": null,
+        "LogPersonalInformation": false
+      },
+      "luisResult": {
+        "query": "I want to create a bug issue",
+        "alteredQuery": null,
+        "topScoringIntent": {
+          "intent": "SubmitBugIntent",
+          "score": 0.731015265
+        },
+        "intents": [
+          {
+            "intent": "SubmitBugIntent",
+            "score": 0.731015265
+          },
+          {
+            "intent": "QueryBugTypeIntent",
+            "score": 0.3263957
+          },
+          {
+            "intent": "None",
+            "score": 0.006238295
+          },
+          {
+            "intent": "GreetingIntent",
+            "score": 0.00312022027
+          }
+        ],
+        "entities": [],
+        "compositeEntities": null,
+        "sentimentAnalysis": null,
+        "connectedServiceResult": null
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "d0383600-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:48:35+02:00",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Enter a description for your report",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "cfd07380-c632-11e9-9a1b-3bce9db4ad0a",
+    "id": "d038f950-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:48:35+02:00",
+    "timestamp": "2019-08-24T05:48:35.557Z",
+    "locale": ""
+  },
+  {
+    "text": "dsdsdsds",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "15666257774458kyclbivpn6"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:49:37.452Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "f51d66c0-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:49:37+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Please enter in a callback time",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "f51d66c0-c632-11e9-9a1b-3bce9db4ad0a",
+    "id": "f521ac80-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:49:37+02:00",
+    "timestamp": "2019-08-24T05:49:37.480Z",
+    "locale": ""
+  },
+  {
+    "text": "2:30PM",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625785924fz04ngqrhh6"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:49:45.928Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "fa2abc80-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:49:45+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Please enter in a phone number that we can call you back at",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "fa2abc80-c632-11e9-9a1b-3bce9db4ad0a",
+    "id": "fa5e0180-c632-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:49:46+02:00",
+    "timestamp": "2019-08-24T05:49:46.264Z",
+    "locale": ""
+  },
+  {
+    "text": "754-3010",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625841390851qg0dt0kw"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:50:41.393Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "1b3a0610-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:50:41+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Please enter a valid phone number",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "1b3a0610-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "1b3c9e20-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:50:41+02:00",
+    "timestamp": "2019-08-24T05:50:41.410Z",
+    "locale": ""
+  },
+  {
+    "text": "541-754-3010",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625852993nmwwul4ugk"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:50:52.995Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "22245930-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:50:52+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Please enter the type of bug.",
+    "inputHint": "acceptingInput",
+    "suggestedActions": {
+      "actions": [
+        {
+          "type": "imBack",
+          "title": "Security",
+          "value": "Security"
+        },
+        {
+          "type": "imBack",
+          "title": "Crash",
+          "value": "Crash"
+        },
+        {
+          "type": "imBack",
+          "title": "Power",
+          "value": "Power"
+        },
+        {
+          "type": "imBack",
+          "title": "Performance",
+          "value": "Performance"
+        },
+        {
+          "type": "imBack",
+          "title": "Usability",
+          "value": "Usability"
+        },
+        {
+          "type": "imBack",
+          "title": "Serious Bug",
+          "value": "Serious Bug"
+        },
+        {
+          "type": "imBack",
+          "title": "Other",
+          "value": "Other"
+        }
+      ]
+    },
+    "attachments": [],
+    "entities": [],
+    "replyToId": "22245930-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "22296240-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:50:53+02:00",
+    "timestamp": "2019-08-24T05:50:53.028Z",
+    "locale": ""
+  },
+  {
+    "text": "crash",
+    "textFormat": "plain",
+    "type": "message",
+    "channelData": {
+      "clientActivityID": "1566625868447ittcc6sj71h"
+    },
+    "channelId": "emulator",
+    "from": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "",
+    "timestamp": "2019-08-24T05:51:08.453Z",
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "id": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "recipient": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:50097"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Here is a summary of your bug report:",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "2b603d70-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "timestamp": "2019-08-24T05:51:08.487Z",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Description: dsdsdsds",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "2b60b2a0-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "timestamp": "2019-08-24T05:51:08.490Z",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Callback Time: 24/08/2019 14:30:00",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "2b6127d0-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "timestamp": "2019-08-24T05:51:08.493Z",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Phone Number: 541-754-3010",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "2b619d00-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "timestamp": "2019-08-24T05:51:08.496Z",
+    "locale": ""
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:50097",
+    "channelId": "emulator",
+    "from": {
+      "id": "15da2740-872c-11e9-b564-037877b365dd",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "c942dbd1-c631-11e9-b942-3185c2fc9a7c|livechat"
+    },
+    "recipient": {
+      "id": "575b800a-9854-4878-bce4-243a2cc3333c",
+      "role": "user"
+    },
+    "text": "Bug: Crash",
+    "inputHint": "acceptingInput",
+    "attachments": [],
+    "entities": [],
+    "replyToId": "2b5b0d50-c633-11e9-9a1b-3bce9db4ad0a",
+    "id": "2b621230-c633-11e9-9a1b-3bce9db4ad0a",
+    "localTimestamp": "2019-08-24T07:51:08+02:00",
+    "timestamp": "2019-08-24T05:51:08.499Z",
+    "locale": ""
+  }
+]

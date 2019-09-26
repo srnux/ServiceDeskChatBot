@@ -1,0 +1,29 @@
+{
+    "name": "Support Desk Bot",
+    "description": "",
+    "services": [
+      {
+        "type": "endpoint",
+        "appId": "",
+        "appPassword": "",
+        "endpoint": "http://localhost:3978/api/messages",
+        "id": "15da2740-872c-11e9-b564-037877b365dd",
+        "name": "development"
+      },
+      {
+        "type": "luis",
+        "id": "60",
+        "name": "customerServiceModel",
+        "version": "0.1",
+        "appId": "9f808e6b-bc78-4e12-90fe-893b602511db",
+        "authoringKey": "c68d2d868db34615932d6aaeebf38b8d",
+        "subscriptionKey": "",
+        "region": "westus"
+
+      }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\MKruczek\\Desktop\\PluralsightBot\\PluralsightBot\\Pluralsight Bot.bot"
+}

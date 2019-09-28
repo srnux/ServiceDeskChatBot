@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SupportDeskBot.Helpers
+namespace ServiceDeskChatBot.Helpers
 {
     public static class BotConstants
     {

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
 
-namespace SupportDeskBot.Bots
+namespace ServiceDeskChatBot.Bots
 {
     public class EchoBot : ActivityHandler
     {

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Choices;
-using SupportDeskBot.Models;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Models;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Dialogs
+namespace ServiceDeskChatBot.Dialogs
 {
     public class BugReportDialog : ComponentDialog
     {

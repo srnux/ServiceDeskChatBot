@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Dialogs
+namespace ServiceDeskChatBot.Dialogs
 {
     public class MainDialog : ComponentDialog
     {

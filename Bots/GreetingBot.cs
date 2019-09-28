@@ -4,10 +4,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
-using SupportDeskBot.Models;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Models;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Bots
+namespace ServiceDeskChatBot.Bots
 {
     public class GreetingBot : ActivityHandler
     {

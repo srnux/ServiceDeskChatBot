@@ -4,10 +4,10 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Schema;
 using Microsoft.Extensions.Logging;
-using SupportDeskBot.Helpers;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Helpers;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Bots
+namespace ServiceDeskChatBot.Bots
 {
     public class DialogBot<T> : ActivityHandler where T : Dialog
     {

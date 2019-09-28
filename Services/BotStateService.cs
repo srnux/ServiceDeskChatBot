@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using SupportDeskBot.Models;
+using ServiceDeskChatBot.Models;
 
-namespace SupportDeskBot.Services
+namespace ServiceDeskChatBot.Services
 {
     public class BotStateService
     {

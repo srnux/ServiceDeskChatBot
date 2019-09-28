@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SupportDeskBot.Models
+namespace ServiceDeskChatBot.Models
 {
     // Defines a state property used to track information about the user.
     public class UserProfile

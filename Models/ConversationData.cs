@@ -1,4 +1,4 @@
-﻿namespace SupportDeskBot.Models
+﻿namespace ServiceDeskChatBot.Models
 {
     public class ConversationData
     {

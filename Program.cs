@@ -7,7 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace SupportDeskBot
+namespace ServiceDeskChatBot
 {
     public class Program
     {

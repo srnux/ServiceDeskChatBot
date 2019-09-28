@@ -6,11 +6,11 @@ using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SupportDeskBot.Bots;
-using SupportDeskBot.Dialogs;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Bots;
+using ServiceDeskChatBot.Dialogs;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot
+namespace ServiceDeskChatBot
 {
     public class Startup
     {

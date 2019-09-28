@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime.Models;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using SupportDeskBot.Helpers;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Helpers;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Dialogs
+namespace ServiceDeskChatBot.Dialogs
 {
     public class BugTypeDialog : ComponentDialog
     {

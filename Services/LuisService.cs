@@ -1,7 +1,7 @@
 ﻿using Microsoft.Bot.Builder.AI.Luis;
 using Microsoft.Extensions.Configuration;
 
-namespace SupportDeskBot.Services
+namespace ServiceDeskChatBot.Services
 {
     public class LuisService
     {

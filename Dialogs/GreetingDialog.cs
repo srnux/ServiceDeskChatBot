@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime.Models;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.EntityFrameworkCore.Internal;
-using SupportDeskBot.Helpers;
-using SupportDeskBot.Models;
-using SupportDeskBot.Services;
+using ServiceDeskChatBot.Helpers;
+using ServiceDeskChatBot.Models;
+using ServiceDeskChatBot.Services;
 
-namespace SupportDeskBot.Dialogs
+namespace ServiceDeskChatBot.Dialogs
 {
     public class GreetingDialog : ComponentDialog
     {

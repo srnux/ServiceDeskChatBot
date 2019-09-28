@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 
-namespace SupportDeskBot.Helpers
+namespace ServiceDeskChatBot.Helpers
 {
     public static class DialogExtensions
     {

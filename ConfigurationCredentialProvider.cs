@@ -6,7 +6,7 @@
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 
-namespace SupportDeskBot
+namespace ServiceDeskChatBot
 {
     public class ConfigurationCredentialProvider : SimpleCredentialProvider
     {

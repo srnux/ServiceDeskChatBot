@@ -147,7 +147,7 @@ namespace ServiceDeskChatBot.Dialogs
 
             if (promptContext.Recognized.Succeeded)
             {
-                valid = Regex.Match(promptContext.Recognized.Value, @"^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$").Success;
+                valid = Regex.Match(promptContext.Recognized.Value, @"^[0-9\+]{1,}[0-9\-]{3,15}$").Success;
             }
             return Task.FromResult(valid);
         }

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ServiceDeskChatBot.Bots;
 using ServiceDeskChatBot.Dialogs;
+using ServiceDeskChatBot.Helpers;
 using ServiceDeskChatBot.Services;
 
 namespace ServiceDeskChatBot
@@ -26,6 +27,9 @@ namespace ServiceDeskChatBot
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            // The Inspection Middleware needs some scratch state to keep track of the (logical) listening connections.
+            services.AddSingleton<InspectionState>();
+
             // Create the credential provider to be used with the Bot Framework Adapter.
             services.AddSingleton<ICredentialProvider, ConfigurationCredentialProvider>();
 
@@ -36,6 +40,9 @@ namespace ServiceDeskChatBot
             ConfigureState(services);
 
             ConfigureDialogs(services);
+
+            // Create the Bot Framework Adapter.
+            services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithInspection>();
 
             // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
             services.AddTransient<IBot, DialogBot<MainDialog>>();

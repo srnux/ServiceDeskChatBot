@@ -59,7 +59,7 @@ namespace ServiceDeskChatBot.Dialogs
                         await stepContext.Context.SendActivityAsync(MessageFactory.Text($"{entity.Entity} is a Bug Type!"),
                             cancellationToken);
 
-                        //await stepContext.Context.SendActivityAsync(ReplyFacebookMessage(stepContext.Context.Activity, entity.Entity), cancellationToken);
+                        await stepContext.Context.SendActivityAsync(ReplyFacebookMessage(stepContext.Context.Activity, entity.Entity), cancellationToken);
                     }
                     else
                     {

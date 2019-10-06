@@ -100,7 +100,9 @@ namespace ServiceDeskChatBot.Dialogs
         {
             UserProfile userProfile =
                 await _botStateService.UserProfileAccessor.GetAsync(stepContext.Context, () => new UserProfile());
-            if (string.IsNullOrEmpty(userProfile.Name))
+            if (string.IsNullOrEmpty(userProfile?.Name) 
+                && stepContext.Values.Keys.Any(p=>p.Equals("Name")) 
+                && !string.IsNullOrWhiteSpace((string)stepContext.Values["Name"]))
             {
                 // Set the name
                 userProfile.Name = (string) stepContext.Values["Name"];

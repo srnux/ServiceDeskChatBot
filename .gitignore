@@ -1,2 +1,6 @@
 /bin/*
 /obj/*
+/Properties/PublishProfiles/servicedeskchatbotservice - Web Deploy.pubxml
+/Properties/PublishProfiles/servicedeskchatbotservice - Web Deploy.pubxml.user
+/ServiceDeskChatBot.csproj.user
+/Azure Service Desk Chat Bot.bot

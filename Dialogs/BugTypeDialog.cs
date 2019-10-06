@@ -52,6 +52,18 @@ namespace ServiceDeskChatBot.Dialogs
             {
                 var entities = luisResult.Entities;
 
+                if (!entities.Any())
+                {
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Could not find a type in your sentence so it is definitively NOT a Bug Type!"),
+                        cancellationToken);
+                    if (luisResult.SentimentAnalysis.Label.Equals("negative"))
+                    {
+                        await stepContext.Context.SendActivityAsync(MessageFactory.Text("Please do not feel frustrated! Try a phrase like: \"Is Crash a bug type?\""),
+                            cancellationToken);
+                    }
+                    
+                    return await stepContext.NextAsync(null, cancellationToken);
+                }
                 foreach (var entity in entities)
                 {
                     if (BotConstants.BugTypes.Any(p => p.Equals(entity.Entity, StringComparison.OrdinalIgnoreCase)))

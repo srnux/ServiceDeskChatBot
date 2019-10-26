@@ -92,7 +92,8 @@ namespace ServiceDeskChatBot.Dialogs
         {
             var userProfile = await WriteToUserProfile(stepContext);
 
-            await stepContext.Context.SendActivityAsync(MessageFactory.Text(String.Format("Hi {0}. How can I help you today?", userProfile.Name)), cancellationToken);
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text(
+                $"Hi {userProfile.Name}. How can I help you today?"), cancellationToken);
             return await stepContext.EndDialogAsync(null, cancellationToken);
         }
 

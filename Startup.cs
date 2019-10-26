@@ -6,11 +6,13 @@ using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ServiceDeskChatBot.Bots;
+//using ServiceDeskChatBot.Bots;
 using ServiceDeskChatBot.Dialogs;
 using ServiceDeskChatBot.Helpers;
 using ServiceDeskChatBot.Services;
 using Microsoft.ApplicationInsights;
+using Microsoft.Bot.Builder.Azure;
+using ServiceDeskChatBot.Bots;
 
 namespace ServiceDeskChatBot
 {
@@ -52,13 +54,11 @@ namespace ServiceDeskChatBot
         public void ConfigureState(IServiceCollection services)
         {
             // Create the storage we'll be using for User and Conversation state. (Memory is great for testing purposes.) 
-            services.AddSingleton<IStorage, MemoryStorage>();
+            //services.AddSingleton<IStorage, MemoryStorage>();
 
-            //var storageAccount = "";
-            //var storageContainer = "";
-
-            //services.AddSingleton<IStorage>(new AzureBlobStorage(storageAccount, storageContainer));
-
+            services.AddSingleton<IStorage>(new AzureBlobStorage(
+                Configuration["storageAccount"], 
+                Configuration["storageContainer"]));
 
             // Create the User state. 
             services.AddSingleton<UserState>();

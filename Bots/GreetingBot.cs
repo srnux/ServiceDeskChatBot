@@ -42,7 +42,8 @@ namespace ServiceDeskChatBot.Bots
             ConversationData conversationData = await _botStateService.ConversationDataAccessor.GetAsync(turnContext, () => new ConversationData());
             if (!string.IsNullOrEmpty(userProfile.Name))
             {
-                await turnContext.SendActivityAsync(MessageFactory.Text(String.Format("Hi {0}. How can I help you today?", userProfile.Name)), cancellationToken);
+                await turnContext.SendActivityAsync(MessageFactory.Text(
+                    $"Hi {userProfile.Name}. How can I help you today?"), cancellationToken);
             }
             else
             {
@@ -52,7 +53,8 @@ namespace ServiceDeskChatBot.Bots
                     userProfile.Name = turnContext.Activity.Text?.Trim();
 
                     // Acknowledge that we got their name.
-                    await turnContext.SendActivityAsync(MessageFactory.Text(String.Format("Thanks {0}. How can I help you today?", userProfile.Name)), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.Text(
+                        $"Thanks {userProfile.Name}. How can I help you today?"), cancellationToken);
 
                     // Reset the flag to allow the bot to go though the cycle again.
                     conversationData.PromptedUserForName = false;
